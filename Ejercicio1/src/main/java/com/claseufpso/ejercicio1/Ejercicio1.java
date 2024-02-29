@@ -1,33 +1,18 @@
-
-
 package com.claseufpso.ejercicio1;
-
+import people.character;
 public class Ejercicio1 {
 
     public static void main(String[] args) {
-        Character homero = new Character("homero",30,'m',"a la grand le puse cuca"); 
+        character homero = new character("homero",30,'m',"a la grand le puse cuca"); 
         homero.saySomething();
         
-        Character bart = new Character("bartolomeo",10,'m',"¡ay caramba!"); 
+        character bart = new character("bartolomeo",10,'m',"ay caramba!"); 
+        bart.saySomething();
         
+        character apu = new character();
+        apu.setName("apu");
+        apu.setPhrase("buelva prontos");
+        
+        apu.saySomething();
+    }    
     }
-    
-    
-        static class Character{
-        String name;
-        int age;
-        char gender;
-        String phrase;
-        
-        public Character(String name, int age, char gender, String phrase){
-            this.name = name;
-            this.age = age;
-            this.gender = gender; 
-            this.phrase = phrase; 
-        }
-        
-        void saySomething(){
-            System.out.println(this.phrase);
-        }
-    }
-}
